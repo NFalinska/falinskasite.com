@@ -1,0 +1,3 @@
+[Fri Dec 09 19:44:24.243310 2016] [:error] [pid 3488:tid 932] [client 127.0.0.1:49389] PHP Notice:  Undefined variable: choice in E:\\usr\\www\\natalasite.com\\bat\\post-obr.php on line 21, referer: http://natalasite.com/
+[Fri Dec 09 19:46:23.334336 2016] [:error] [pid 3488:tid 932] [client 127.0.0.1:49390] PHP Notice:  Undefined variable: choice in E:\\usr\\www\\natalasite.com\\bat\\post-obr.php on line 21, referer: http://natalasite.com/
+[Fri Dec 09 19:46:30.490554 2016] [:error] [pid 3488:tid 932] [client 127.0.0.1:49392] PHP Notice:  Undefined variable: choice in E:\\usr\\www\\natalasite.com\\bat\\post-obr.php on line 21, referer: http://natalasite.com/

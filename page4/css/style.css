@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/profiterole.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+    background-attachment: fixed;
+}
+
+.logo {
+    padding-top: 100px;
+    margin-left: 60%;
+}
+.profiteroles {
+    display: inline-block;
+    float: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 100px;
+    width: 80%;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 10px;
+    opacity: 0.8;
+    filter: alpha(Opacity=70);
+    background: black;
+}
+p {
+    font-style: italic;
+    line-height: 1.3am;
+}
+h3 {
+    font-style: oblique;
+    font-size: 25px;
+    text-align: center;
+}
+h4 {
+    color: antiquewhite;
+    margin-left: 100px;
+}
+p2 {
+    color: azure;
+}
+.collection-item-outer img {
+    border-radius: 10px;
+}
+.time {
+    color: aliceblue;
+}
+
+.recipe {
+    width: 50%;
+    float: left;
+}
+.recipe-text {
+    padding: 0 20px 20px 20px;
+    outline: none;
+}
+.recipe-text h3 {
+    color: skyblue;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    outline: none;
+}
+.recipe-text p {
+    color: whitesmoke;
+    outline: none;
+}
+
+.footer {
+    position: fixed; 
+    left: 0; bottom: 0; 
+    color: #fff; 
+    width: 100%; 
+	background: black;
+   }

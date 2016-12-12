@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
+
+
+    <style>
+        a.button {
+            position: relative;
+            display: inline-block;
+            color: #777674;
+            text-decoration: none;
+            text-shadow: rgba(255, 255, 255, .5) 1px 1px, rgba(100, 100, 100, .3) 3px 5px 3px;
+            user-select: none;
+            padding: 7px;
+            margin-left: 45%;
+            outline: none;
+            border-radius: 1px / 100%;
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, .0) 30%, rgba(255, 255, 255, .8), rgba(255, 255, 255, .0) 70%), linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, .3)), linear-gradient(to right, rgba(125, 125, 125, 1), rgba(255, 255, 255, .9) 45%, rgba(125, 125, 125, .5)), linear-gradient(to right, rgba(125, 125, 125, 1), rgba(255, 255, 255, .9) 45%, rgba(125, 125, 125, .5)), linear-gradient(to right, rgba(223, 190, 170, 1), rgba(255, 255, 255, .9) 45%, rgba(223, 190, 170, .5)), linear-gradient(to right, rgba(223, 190, 170, 1), rgba(255, 255, 255, .9) 45%, rgba(223, 190, 170, .5));
+            background-repeat: no-repeat;
+            background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+            background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+            box-shadow: rgba(0, 0, 0, .5) 3px 10px 10px -10px;
+        }
+        
+        a.button:hover {
+            transition: .5s linear;
+            background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+        }
+        
+        a.button:active {
+            top: 1px;
+        }
+    </style>
+</head>
+
+<body>
+  
+
+
+    <header>
+
+
+ 	<div class="logo">
+            <a href="index.html"><img src="img/logo2.png" alt="logo" width="100%" height="100%"></a>
+						
+        </div>
+    </header>
+
+
+    <main>
+	
+	<!-- Mailform Повна форма -->
+    <div class="modal fadeIn" id="mymodal_form" tabindex="-1" role="dialog" aria-labelledby="myModalFormLabel">
+     <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content" >
+       <form method="post" action="" class="form" id="buy_form"  role="form"> 
+        <div class="modal-header">
+            <button type="button" class="button" aria-label="Close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title" style="text-align:center;" id="myModalFormLabel">New Recipe</h4>
+        </div>
+        <div id="content_form" class="modal-body">
+		<div id="success_form">
+	        <p data-caption-animate="fadeInUp" data-caption-delay="500">New recipe is added</p>
+	    </div>
+         <table id="order_table" style = "margin: float">
+		 <tr>
+		 <td style="width: 30%">Name of Recipe </td>
+		 <td style="width: 70%"><input type="text" size="35" maxlength="35" name="klient_name" id="form_klient_name"  required autofocus="true" value="" placeholder="Please write the name" ></td>
+		 </tr>
+		 <tr id="tr1">
+         <td>E-mail</td>
+         <td><input type="text" size="35" maxlength="35" name="klient_email" id="form_klient_email" required placeholder="Please write an email" val=""></td>
+		 </tr>
+		 <tr id="tr2">
+         <td>Ingredients</td>
+         <td><textarea size="100" cols="35" rows="7" name="klient_phone" id="form_klient_phone" placeholder="Please write ingredients" val=""></textarea></td>
+		 </tr>
+		</table>
+		</div>
+        <div class="modal-footer" style="text-align:center;">
+		<button type="submit" id="btnbuy" name="send_data" value="buy1" class="btn btn-primary">OK</button>
+        </div>
+      </form>
+	  
+	  </div>
+    </div>
+  </div>
+    <!-- END Mailform Повна форма -->
+	<div data-caption-animate="fadeInUp" data-caption-delay="600" class="offset-top-30 offset-lg-top-60"><a href="button"  onclick="showform('ZERO');return false;" class="button" b><span class="icon mdi mdi-telegram"></span>Add New Recipe</a></div>
+        <div class="collections">
+            <div class="collection-item-outer">
+                <img src="img/prague_cake.jpg" alt="List picture" width="90%" height="220">
+                <div class="collection-text">
+                    <h3> Prague Cake</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <a href="page1/index1.html" class="button">read more</a>   
+                </div>
+            </div>
+		
+            <div class="collection-item-outer">
+			
+                <img src="img/cookies.jpg" alt="List picture" width="90%" height="220px">
+                <div class="collection-text">
+                    <h3>Cookies</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <a href="page2/index2.html" class="button">read more</a>
+                </div>
+            </div>
+            <div class="collection-item-outer">
+                <img src="img/cupcakes.jpg" alt="List picture" width="90%" height="220">
+                <div class="collection-text">
+                    <h3>Cupcakes</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <a href="page3/index3.html" class="button">read more</a>
+                </div>
+            </div>
+            <div class="collection-item-outer">
+                <img src="img/profiterole.jpg" alt="List picture" width="90%" height="220">
+                <div class="collection-text">
+                    <h3> Profiteroles</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <a href="page4/index4.html" class="button">read more</a>
+                </div>
+            </div>
+            <div class="collections">
+                <div class="collection-item-outer">
+                    <img src="img/candies.jpg" alt="List picture" width="90%" height="220">
+                    <div class="collection-text">
+                        <h3>Candies</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <a href="page5/index5.html" class="button">read more</a>
+                    </div>
+                </div>
+                <div class="collection-item-outer">
+                    <img src="img/cheesecake.jpg" alt="List picture" width="90%" height="220">
+                    <div class="collection-text">
+                        <h3>Cheesecake</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <a href="page6/index6.html" class="button">read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		
+    </main>
+
+    <footer class="footer">
+
+       
+          Contacts
+        
+
+    </footer>
+   <!-- Java script-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+	<script src="js/scroll.js"></script>
+	<script src="js/tmailformscript.js"></script>
+
+</body>
+
+</html>
